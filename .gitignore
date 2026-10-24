@@ -1,0 +1,25 @@
+cat > .gitignore <<'EOF'
+# Environment dan kredensial
+.env
+.env.*
+!.env.example
+
+# Log dan file sementara
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Backup database
+*.sql.bak
+*.sql.backup
+*.dump
+
+# File upload E-Book
+uploads/ebooks/covers/*
+!uploads/ebooks/covers/.gitkeep
+
+uploads/ebooks/pdf/*
+!uploads/ebooks/pdf/.gitkeep
+EOF
