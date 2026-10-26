@@ -11,7 +11,7 @@ function db(): PDO
     }
 
     $host = getenv('BLS_DB_HOST') ?: '127.0.0.1';
-    $name = getenv('BLS_DB_NAME') ?: 'bls_ebook';
+    $name = getenv('BLS_DB_NAME') ?: 'db_binalib';
     $user = getenv('BLS_DB_USER') ?: 'root';
     $pass = getenv('BLS_DB_PASS') ?: '';
 
